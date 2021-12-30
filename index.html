@@ -18,13 +18,11 @@ layout: default
 			  
 			  {% if post.tags %}
 			  {% for tag in post.tags %}
-				{% assign cat = tag[0] %}
-			 {% endfor %}
-			 {% if cat %}
+				
 			  <div class="col-md-4 text-center mt25">
 				{{tag}}
 			  </div>
-			  {% endif %}
+			  {% endfor %}
 			  {% endif %}
 			  </p>
                <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
