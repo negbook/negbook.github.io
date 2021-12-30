@@ -17,8 +17,9 @@ layout: default
               <p class="p-0 my-1 mx-0"><span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span>
 			  
 			  {% if post.tags %}
-			  {{post.tags}}
-			  
+			  {% for tag in post.tags %} 
+				{{tag}}
+			  {% endfor %}
 			  {% endif %}
 			  </p>
                <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
