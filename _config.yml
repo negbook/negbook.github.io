@@ -36,8 +36,8 @@ paginate_path: /page:num/
 analytics: UA-83979019-1
 
 # Comments
-disqus: yes
-disqus-shortname: webjeda-demo
+# disqus: yes
+# disqus-shortname: webjeda-demo
 
 #social
 #facebook: http://facebook.com/
