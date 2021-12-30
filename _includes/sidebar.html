@@ -30,14 +30,7 @@
     <h2>Categories</h2>
     <ul>
       {% for category in site.categories %}
-  <div class="archive-group">
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-    <p></p>
-
-
-    <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-  </div>
+  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
 {% endfor %}
     </ul>
   </div>
