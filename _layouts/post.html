@@ -18,17 +18,7 @@ layout: default
           <span itemprop="author" itemscope itemtype="http://schema.org/Person"
             ><span itemprop="name">{{ page.author }}</span></span
           >{% endif %}
-		  <span class="post-tags">標籤：
-  {% if post %}
-    {% assign tags = post.tags %}
-  {% else %}
-    {% assign tags = page.tags %}
-  {% endif %}
-  {% for tag in tags %}
-  <a href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a>
-  {% unless forloop.last %}&nbsp;{% endunless %}
-  {% endfor %}
-</span><span class="post-categories">分類：
+		  <span class="post-categories">分類：
   {% if post %}
     {% assign categories = post.categories %}
   {% else %}
@@ -41,8 +31,21 @@ layout: default
 </span>
         </p>
       </header>
-      <div class="post-content" itemprop="articleBody">{{ content }}</div>
-    </article>
+      <div class="post-content" itemprop="articleBody">{{ content }}
+	  <br>
+	  <span class="post-tags">標籤：
+  {% if post %}
+    {% assign tags = post.tags %}
+  {% else %}
+    {% assign tags = page.tags %}
+  {% endif %}
+  {% for tag in tags %}
+  <a href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}
+</span>
+	  </div>
+	</article>
 
     <div class="next-previous-articles">
       <nav aria-label="">
