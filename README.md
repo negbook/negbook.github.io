@@ -1,4 +1,5 @@
 Demo: [http://webjeda.com/cards](http://webjeda.com/cards)
+Fork this theme: [https://github.com/sharu725/cards]
 
 ## Installation
 * Fork the repository
