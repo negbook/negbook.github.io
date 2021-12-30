@@ -21,7 +21,9 @@ layout: default
 				{% assign cat = tag[0] %}
 			 {% endfor %}
 			 {% if cat %}
-			  標籤：{{post.tags | join: ', '}}
+			  <div class="col-md-4 text-center mt25">
+        {{tag}}
+      </div>
 			  {% endif %}
 			  {% endif %}
 			  </p>
