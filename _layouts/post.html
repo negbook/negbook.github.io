@@ -18,7 +18,7 @@ layout: default
           <span itemprop="author" itemscope itemtype="http://schema.org/Person"
             ><span itemprop="name">{{ page.author }}</span></span
           >{% endif %}
-		  <div class="post-categories">
+		  <span class="post-categories">
   {% if post %}
     {% assign categories = post.categories %}
   {% else %}
@@ -28,7 +28,7 @@ layout: default
   <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
   {% unless forloop.last %}&nbsp;{% endunless %}
   {% endfor %}
-</div>
+</span>
         </p>
       </header>
       <div class="post-content" itemprop="articleBody">{{ content }}</div>
