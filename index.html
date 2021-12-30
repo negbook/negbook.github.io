@@ -17,13 +17,14 @@ layout: default
               <p class="p-0 my-1 mx-0"><span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span>
 			  
 			  {% if post.tags %}
-			  {% for tag in site.tags %}
-				
-			 
+			  {% for tag in post.tags %}
+				{% assign cat = tag[0] %}
+			 {% endfor %}
+			 {% if cat %}
 			  <div class="col-md-4 text-center mt25">
 				{{tag}}
 			  </div>
-			  {% endfor %}
+			  {% endif %}
 			  {% endif %}
 			  </p>
                <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
