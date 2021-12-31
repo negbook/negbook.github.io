@@ -17,14 +17,14 @@ layout: default
               <h3 class="panel-title font-weight-bold">{{ post.title | truncate: 25 }}</h3>
 			  </a>
               <p class="p-0 my-1 mx-0"><span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small>
-			  {% if post.categories[0] %}<small style="float:right">分類:
+			  {% if post.categories[0] %}<span style="float:right" class="post-meta"><small>分類:
 			  {% for cat in post.categories %}
 				
 			  <a href="{{site.baseurl}}/categories/#{{cat|slugize}}">
 				{{cat}}</a>
 			  &nbsp;
 			  {% endfor %}
-			  </small>
+			  </small></span>
 			  {% endif %}
 			  </span>
 			  
