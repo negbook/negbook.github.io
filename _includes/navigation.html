@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-  <a class="navbar-brand" href={{"/" | relative_url}}>Navbar</a>
+  <a class="navbar-brand" href={{"/" | relative_url}}>{% if site.title %}{{site.title}}{% endif %}</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -49,7 +49,7 @@
       </li>
 	  -->
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">樹痕</a>
+        <a class="nav-link disabled" href="#">{% if site.title %}{{site.title}}{% endif %}</a>
       </li>
     </ul>
   </div>

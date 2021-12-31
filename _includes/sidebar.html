@@ -45,7 +45,7 @@
     <ul>
       {% for tag in site.tags %}
     {% assign cat = tag[0] %}
-    <li><p><a href="{{site.baseurl}}/categories/#{{cat|slugize}}">{{cat}}</a></p></li>
+    <small><a href="{{site.baseurl}}/categories/#{{cat|slugize}}">{{cat}}</a></small>
 	
 {% endfor %}
     </ul>
