@@ -22,10 +22,10 @@ layout: default
 			  </p>
                <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
 			   <span>
-			   {% if post.tags[0] %}
+			   {% if post.tags[0] %}Tag:
 			  {% for tag in post.tags %}
 				
-			  <small class="border"><a href="{{site.baseurl}}/tags/#{{tag|slugize}}">
+			  <small><a href="{{site.baseurl}}/tags/#{{tag|slugize}}">
 				{{tag}}</a>
 				</small>&nbsp;
 			  
@@ -33,7 +33,7 @@ layout: default
 			  </span>
 			  {% endif %}
 			  <span style="float:right">
-			  {% if post.categories[0] %}
+			  {% if post.categories[0] %}分類:
 			  {% assign cat = post.categories[0] %}
 				
 			  <small><a href="{{site.baseurl}}/categories/#{{cat|slugize}}">

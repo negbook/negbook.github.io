@@ -25,7 +25,7 @@ layout: default
     {% assign categories = page.categories %}
   {% endif %}
   {% if categories[0] %}
-  分類：
+  分類:
   {% for category in categories %}
   <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
   {% unless forloop.last %}&nbsp;{% endunless %}
@@ -43,7 +43,7 @@ layout: default
     {% assign tags = page.tags %}
   {% endif %}
   {% if tags[0] %}
-  標籤：
+  Tag:
   {% for tag in tags %}
   <a href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a>
   {% unless forloop.last %}&nbsp;{% endunless %}
