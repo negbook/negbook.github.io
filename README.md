@@ -1,6 +1,8 @@
-Demo: [http://webjeda.com/cards](http://webjeda.com/cards)
-Fork this theme: [https://github.com/sharu725/cards]
-
+Demo: [http://webjeda.com/cards](http://webjeda.com/cards)  
+Fork this theme: [https://github.com/sharu725/cards]  
+在sharu725的基礎上，
+1.加入了Tag
+2.加入了分類
 ## Installation
 * Fork the repository
 * Go to settings and set Github Pages source as master.
