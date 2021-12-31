@@ -14,19 +14,26 @@ layout: default
             {% endif %}
             <div class="card-body">
               <h3 class="panel-title font-weight-bold">{{ post.title | truncate: 25 }}</h3>
-              <p class="p-0 my-1 mx-0"><span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small>{% if post.tags %}
-			  {% for tag in post.tags %}
+              <p class="p-0 my-1 mx-0"><span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span>{% if post.tags %}
+			  {% for cat in post.categories %}
 				
-			  <span class="btn btn-primary btn-sm">
-				{{tag}}
-			  </span>
+			  <span style="float:right"><small>
+				{{cat}}
+			  </small></span>
 			  {% endfor %}
-			  {% endif %}</span>
+			  {% endif %}
 			  
 			  
 			  </p>
                <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
-			   
+			   {% if post.tags %}
+			  {% for tag in post.tags %}
+				
+			  <span style="float:right" class="btn btn-primary btn-sm">
+				{{tag}}
+			  </span>
+			  {% endfor %}
+			  {% endif %}
             </div>
           </div>
         </div>
