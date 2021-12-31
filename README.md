@@ -1,7 +1,7 @@
 Demo: [http://webjeda.com/cards](http://webjeda.com/cards)  
 Fork this theme: [https://github.com/sharu725/cards]  
 在sharu725的基礎上，  
-1.加入了Tag以及分類  
+1.加入了Tag以及分類 2021/12/31  
 ## Installation
 * Fork the repository
 * Go to settings and set Github Pages source as master.
