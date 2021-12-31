@@ -18,12 +18,12 @@ layout: default
 			  </a>
               <p class="p-0 my-1 mx-0"><span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small>
 			  {% if post.categories[0] %}<small style="float:right">分類:
-			  {% assign cat = post.categories[0] %}
+			  {% for cat in post.categories %}
 				
 			  <a href="{{site.baseurl}}/categories/#{{cat|slugize}}">
 				{{cat}}</a>
 			  &nbsp;
-			  
+			  {% endfor %}
 			  </small>
 			  {% endif %}
 			  </span>
