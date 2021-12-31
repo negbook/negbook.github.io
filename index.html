@@ -13,8 +13,15 @@ layout: default
             <img src="{{post.image | relative_url}}" alt="{{post.title}}">
             {% endif %}
             <div class="card-body">
-				<p>
-				 <span>
+				
+              <h3 class="panel-title font-weight-bold">{{ post.title | truncate: 25 }}</h3>
+			  </a>
+              <p class="p-0 my-1 mx-0"><span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span>
+			 
+			  
+			  </p>
+               <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
+			   <span>
 			   {% if post.tags %}
 			  {% for tag in post.tags %}
 				
@@ -25,15 +32,6 @@ layout: default
 			  {% endfor %}
 			  </span>
 			  {% endif %}
-			  </p>
-              <h3 class="panel-title font-weight-bold">{{ post.title | truncate: 25 }}</h3>
-			  </a>
-              <p class="p-0 my-1 mx-0"><span class="post-meta"><small>{{ post.date | date: "%b %-d, %Y" }}</small></span>
-			 
-			  
-			  </p>
-               <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
-			   
 			  <span style="float:right">
 			  {% if post.categories %}
 			  {% assign cat = post.categories[0] %}
