@@ -23,7 +23,7 @@ default-image: webjeda-logo-big.jpg # If there is no featured image in a post th
 built-by: webjeda
 
 copyright:
-   name: 樹痕
+   name: 樹亨
    link: 'http://negbook.github.io'
 
 # Build settings
