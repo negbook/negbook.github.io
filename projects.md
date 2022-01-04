@@ -4,7 +4,7 @@ title: 計劃記錄表
 permalink: /projects/
 ---
 
-#計劃中
+# 計劃中  
 
 |時間|標籤|內容|
 |--|--|--|
@@ -13,7 +13,8 @@ permalink: /projects/
 |正在進行|遊戲設計FiveM|[安全帶插件](https://www.youtube.com/watch?v=JCFyHNjzGX4)|
 {:.mbtablestyle}
 
-#已完成  
+
+# 已完成  
 
 |作品名|標籤|內容|
 |--|--|--|
