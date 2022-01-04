@@ -11,6 +11,7 @@ permalink: /projects/
 |待定|遊戲設計FiveM|[勁舞團插件](https://www.youtube.com/watch?v=9nEbqqPXWwE)|
 |待定|遊戲設計FiveM|[Apple Watch插件](https://www.youtube.com/watch?v=yXj6OYGD2Nk)|
 |正在進行|遊戲設計FiveM|[安全帶插件](https://www.youtube.com/watch?v=JCFyHNjzGX4)|
+{:.mbtablestyle}
 
 #已完成  
 
@@ -26,3 +27,4 @@ permalink: /projects/
 |nbk_spdog_custom|遊戲設計FiveM|[仿Sleeping Dog Hud](https://www.youtube.com/watch?v=F6V4dyHfi6U)|
 |nbk_noso_custom|遊戲設計FiveM|[仿Need For Speed Hud](https://www.youtube.com/watch?v=bzZssB8fB3w)|
 |nbk_3dspeedo_custom|遊戲設計FiveM|[3D 速度顯示 Hud Scaleform重製化](https://www.youtube.com/watch?v=H1OmDBSRyMU)|
+{:.mbtablestyle}
