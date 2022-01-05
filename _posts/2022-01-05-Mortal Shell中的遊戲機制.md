@@ -2,7 +2,7 @@
 layout: post
 title:  "Mortal Shell中的遊戲機制"
 categories: 設計整理
-tags: MGSV 設計
+tags: "Mortal Shell" "設計"
 image: /images/pages/mortalshell.jpg
 ---
 
