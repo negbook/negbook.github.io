@@ -2,7 +2,7 @@
 layout: post
 title:  "Mortal Shell中的遊戲機制"
 categories: 設計整理
-tags: "Mortal Shell" "設計"
+tags: MortalShell 設計
 image: /images/pages/mortalshell.jpg
 ---
 
