@@ -2,7 +2,7 @@
 layout: post
 title:  "Candy Crush的趣味機制"
 categories: 設計整理
-tags: [Candy Crush,設計]
+tags: [Candy Crush,小遊戲,設計]
 image: /images/pages/candycrush.jpg
 ---
 
